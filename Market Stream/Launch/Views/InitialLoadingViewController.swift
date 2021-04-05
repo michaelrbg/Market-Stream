@@ -23,11 +23,20 @@ final class InitialLoadingViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        configureView()
     }
     
     // MARK: - Private
     
     // MARK: Properties
     
+    @IBOutlet private weak var screenTitleLabel: UILabel!
+    
     private let viewModel: InitialLoadingViewModelType
+    
+    // MARK: Functions
+    
+    private func configureView() {
+        screenTitleLabel.text = viewModel.screenTitle
+    }
 }

@@ -5,4 +5,6 @@
 //  Created by Michael Grimmer on 3/4/21.
 //
 
-protocol InitialLoadingViewModelType {}
+protocol InitialLoadingViewModelType {
+    var screenTitle: String { get }
+}
