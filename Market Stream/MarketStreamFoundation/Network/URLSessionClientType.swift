@@ -11,12 +11,12 @@ protocol URLSessionClientType {
     func httpDataRequest(_ httpRequest: HTTPRequestType, response: @escaping (Result<HTTPResponse, HTTPError>) -> Void)
 }
 
-public struct HTTPResponse {
+struct HTTPResponse {
     let header: [AnyHashable: Any]
     let body: HTTPResponseBody
 }
 
-public enum HTTPError: Error {
+enum HTTPError: Error {
     case client(statusCode: Int, apiErrorMessage: APIErrorMessage?)
     case server(statusCode: Int, apiErrorMessage: APIErrorMessage?)
     case other(statusCode: Int, data: Data?)
@@ -30,5 +30,5 @@ public enum HTTPError: Error {
     case unknown
 }
 
-public typealias HTTPResponseBody = Data
-public typealias APIErrorMessage = String
+typealias HTTPResponseBody = Data
+typealias APIErrorMessage = String

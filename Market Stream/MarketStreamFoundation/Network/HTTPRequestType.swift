@@ -7,7 +7,7 @@
 
 import Foundation
 
-public protocol HTTPRequestType {
+protocol HTTPRequestType {
     var urlPath: String { get }
     var httpMethod: HTTPMethod { get }
     var httpHeaders: HTTPHeaders { get }
@@ -19,7 +19,7 @@ public protocol HTTPRequestType {
     var correlationId: String? { get }
 }
 
-public enum HTTPMethod: String {
+enum HTTPMethod: String {
     case delete = "DELETE"
     case get = "GET"
     case post = "POST"
@@ -31,10 +31,10 @@ public enum HTTPMethod: String {
     }
 }
 
-public enum HTTPRequestBody {
+enum HTTPRequestBody {
     case data(Data)
     case empty
 }
 
-public typealias HTTPHeaders = [String: String]
-public typealias HTTPParameters = [String: String]
+typealias HTTPHeaders = [String: String]
+typealias HTTPParameters = [String: String]
