@@ -25,6 +25,7 @@
 		38A822CF26270B3200BE314F /* SpotMarket.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38A822CE26270B3200BE314F /* SpotMarket.swift */; };
 		38A822D426270BA700BE314F /* FuturesMarket.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38A822D326270BA700BE314F /* FuturesMarket.swift */; };
 		38A822D926270BE100BE314F /* UnknownMarket.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38A822D826270BE100BE314F /* UnknownMarket.swift */; };
+		38A822E0262714F900BE314F /* MarketsDataClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38A822DF262714F900BE314F /* MarketsDataClient.swift */; };
 		38CF09172621BD1F0080D16A /* URLSessionClientType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38CF09162621BD1F0080D16A /* URLSessionClientType.swift */; };
 		38CF091C2621BFDE0080D16A /* HTTPRequestType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38CF091B2621BFDE0080D16A /* HTTPRequestType.swift */; };
 		38CF09212621C2250080D16A /* HTTPRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38CF09202621C2250080D16A /* HTTPRequest.swift */; };
@@ -75,6 +76,7 @@
 		38A822CE26270B3200BE314F /* SpotMarket.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpotMarket.swift; sourceTree = "<group>"; };
 		38A822D326270BA700BE314F /* FuturesMarket.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FuturesMarket.swift; sourceTree = "<group>"; };
 		38A822D826270BE100BE314F /* UnknownMarket.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UnknownMarket.swift; sourceTree = "<group>"; };
+		38A822DF262714F900BE314F /* MarketsDataClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarketsDataClient.swift; sourceTree = "<group>"; };
 		38CF09162621BD1F0080D16A /* URLSessionClientType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLSessionClientType.swift; sourceTree = "<group>"; };
 		38CF091B2621BFDE0080D16A /* HTTPRequestType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTTPRequestType.swift; sourceTree = "<group>"; };
 		38CF09202621C2250080D16A /* HTTPRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTTPRequest.swift; sourceTree = "<group>"; };
@@ -227,6 +229,22 @@
 			path = Models;
 			sourceTree = "<group>";
 		};
+		38A822DD2627146D00BE314F /* MarketStreamData */ = {
+			isa = PBXGroup;
+			children = (
+				38A822DE262714D500BE314F /* Clients */,
+			);
+			path = MarketStreamData;
+			sourceTree = "<group>";
+		};
+		38A822DE262714D500BE314F /* Clients */ = {
+			isa = PBXGroup;
+			children = (
+				38A822DF262714F900BE314F /* MarketsDataClient.swift */,
+			);
+			path = Clients;
+			sourceTree = "<group>";
+		};
 		38CF09142621BC6B0080D16A /* MarketStreamFoundation */ = {
 			isa = PBXGroup;
 			children = (
@@ -299,6 +317,7 @@
 		38F4D7FB2614A695003156B9 /* Market Stream */ = {
 			isa = PBXGroup;
 			children = (
+				38A822DD2627146D00BE314F /* MarketStreamData */,
 				385129222622094700DE0F34 /* MarketStreamAPI */,
 				38CF09142621BC6B0080D16A /* MarketStreamFoundation */,
 				38E492DD261B2D1A0069C38E /* MarketStreamDomain */,
@@ -460,6 +479,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				38A822E0262714F900BE314F /* MarketsDataClient.swift in Sources */,
 				38F4D8072614A695003156B9 /* Market_Stream.xcdatamodeld in Sources */,
 				3888D2B926174C7100A8C91A /* InitialLoadingViewController.swift in Sources */,
 				38F4D7FD2614A695003156B9 /* AppDelegate.swift in Sources */,
