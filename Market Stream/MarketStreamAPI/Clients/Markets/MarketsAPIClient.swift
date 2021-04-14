@@ -10,7 +10,7 @@ import Foundation
 final class MarketsAPIClient: MarketsAPIClientType {
     // MARK: - Initializer
     
-    init(networkGateway: NetworkGatewayType, jsonDecoder: JSONDecoder = JSONDecoder()) {
+    init(_ networkGateway: NetworkGatewayType, jsonDecoder: JSONDecoder = JSONDecoder()) {
         self.networkGateway = networkGateway
         self.jsonDecoder = jsonDecoder
     }
