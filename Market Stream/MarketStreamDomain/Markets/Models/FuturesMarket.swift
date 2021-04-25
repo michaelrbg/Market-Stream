@@ -9,6 +9,6 @@ struct FuturesMarket {
     let name: String
     let underlying: String
     let enabled: Bool
-    let lastTradedPrice: Double
+    let lastTradedPrice: Double?
     let restricted: Bool
 }

@@ -10,6 +10,6 @@ struct SpotMarket {
     let baseCurrency: String
     let quoteCurrency: String
     let enabled: Bool
-    let lastTradedPrice: Double
+    let lastTradedPrice: Double?
     let restricted: Bool
 }

@@ -12,6 +12,6 @@ struct UnknownMarket {
     let type: String
     let underlying: String?
     let enabled: Bool
-    let lastTradedPrice: Double
+    let lastTradedPrice: Double?
     let restricted: Bool
 }

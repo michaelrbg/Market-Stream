@@ -19,7 +19,7 @@ struct MarketAPIModel: Codable {
     let enabled: Bool
     let ask: Double
     let bid: Double
-    let last: Double
+    let last: Double?
     let postOnly: Bool
     let priceIncrement: Double
     let sizeIncrement: Double
